@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.308 s <<< FAILURE! - in TestSuite
+onliner.tests.forExperiments.xTest  Time elapsed: 6.391 s  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: 
+invalid selector: Unable to locate an element with the xpath expression [[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -> xpath: //div[@class='schema-product__title']//span[@data-bind='html: product.extended_name || product.full_name']] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -> xpath: //div[@class='schema-product__title']//span[@data-bind='html: product.extended_name || product.full_name']]' is not a valid XPath expression.
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'WSA-057-23', ip: '192.168.170.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d64d0186b62bebb1cd52f2b5755d8a6d, findElements {using=xpath, value=[[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -> xpath: //div[@class='schema-product__title']//span[@data-bind='html: product.extended_name || product.full_name']]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ILYA~1.SHA\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d64d0186b62bebb1cd52f2b5755d8a6d
+	at onliner.tests.forExperiments.runTest(forExperiments.java:23)
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testng]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="SteamTest(failed)" verbose="0">
+    <classes>
+      <class name="onliner.tests.forExperiments">
+        <methods>
+          <include name="after"/>
+          <include name="xTest"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- onliner.tests.forExperiments -->
+    </classes>
+  </test> <!-- SteamTest(failed) -->
+</suite> <!-- Failed suite [testng] -->
