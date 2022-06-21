@@ -1,7 +1,10 @@
 package framework.elements;
 
+import org.openqa.selenium.By;
+
 public class StringFormat extends BaseElement{
-    public StringFormat(String locatorTemplate, String nameOf) {
+
+    public StringFormat(By locatorTemplate, String nameOf) {
         super(locatorTemplate, nameOf);
     }
 }

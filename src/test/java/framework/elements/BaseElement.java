@@ -25,6 +25,10 @@ public class BaseElement extends BaseForm {
         locator = loc;
     }
 
+    public String getLocator() {
+        String text = String.valueOf(locator);
+        return cutLocatorType(text);
+    }
 
     public WebElement getElement() {
         return findElement(locator);

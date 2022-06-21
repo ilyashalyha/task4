@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.nio.file.Paths;
@@ -18,8 +19,8 @@ import static framework.BaseTest.browser;
 
 public class BaseForm extends Browser{
 
-    public ResourceBundle locBundle;
-
+    private ResourceBundle locBundle;
+    private SoftAssert softAssert = new SoftAssert();
     private Actions actions = new Actions(driver);
 
     public void checkOpenedPageByTitle(String title) {
@@ -41,6 +42,14 @@ public class BaseForm extends Browser{
 
     public void assertOpenedPageByText(InfoField infoField, String value) {
         Assert.assertEquals(infoField.getElement().getText(), value);
+    }
+
+    public void softAssertTrue(boolean check ,String message) {
+        softAssert.assertTrue(check);
+    }
+
+    public void assertAll() {
+        softAssert.assertAll();
     }
 
     public List<WebElement> findElements(String locator) {
@@ -135,6 +144,12 @@ public class BaseForm extends Browser{
         int start = builder.indexOf(" и ");
 
         return builder.replace(start + 2, start + 3, " ").toString();
+    }
+
+    public String cutLocatorType(String locator) {
+        StringBuilder builder = new StringBuilder(locator);
+        int firstPart = builder.indexOf(" ");
+        return builder.substring(firstPart);
     }
 
 }

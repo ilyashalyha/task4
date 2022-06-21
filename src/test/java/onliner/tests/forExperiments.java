@@ -20,6 +20,6 @@ public class forExperiments extends BaseTest {
         tvPage.setMaxPrice("1500");
         tvPage.setDiagonal("40", "50");
         tvPage.setResolution("1920x1080 (Full HD)");
-        tvPage.checkFilterResults("Samsung");
+        tvPage.checkFilterResults("Samsung", "1920x1080 (Full HD)", "40", "50", "1500");
     }
 }
