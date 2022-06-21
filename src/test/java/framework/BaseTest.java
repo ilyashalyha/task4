@@ -11,18 +11,18 @@ public abstract class BaseTest {
 
     public abstract void runTest();
 
-    @BeforeTest
+    //@BeforeTest
     public void before() {
         browser = Browser.getInstance();
     }
 
-    @Test
+    //@Test
     public void xTest() {
         Class<? extends BaseTest> currentClass = this.getClass();
         runTest();
     }
 
-    @AfterTest(alwaysRun = true)
+    //@AfterTest(alwaysRun = true)
     public void after() {
         if (browser.isBrowserAlive()) {
             //browser.exit();

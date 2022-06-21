@@ -3,13 +3,13 @@
 <suite name="Failed suite [testng]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="SteamTest(failed)" verbose="0">
     <classes>
-      <class name="onliner.tests.forExperiments">
+      <class name="onliner.tests.runner.TestRunner">
         <methods>
-          <include name="after"/>
-          <include name="xTest"/>
-          <include name="before"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- onliner.tests.forExperiments -->
+      </class> <!-- onliner.tests.runner.TestRunner -->
     </classes>
   </test> <!-- SteamTest(failed) -->
 </suite> <!-- Failed suite [testng] -->

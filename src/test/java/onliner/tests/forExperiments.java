@@ -1,9 +1,9 @@
 package onliner.tests;
 
 import framework.BaseTest;
-import onliner.tests.forms.CatalogPage;
-import onliner.tests.forms.MainPage;
-import onliner.tests.forms.TVPage;
+import onliner.tests.pageObjects.CatalogPage;
+import onliner.tests.pageObjects.MainPage;
+import onliner.tests.pageObjects.TVPage;
 
 public class forExperiments extends BaseTest {
     @Override

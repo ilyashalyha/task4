@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-testng" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-testng">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-testng" title="onliner.tests.forExperiments" class="method navigator-link" hash-for-method="xTest">xTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-testng" title="onliner.tests.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check filters in TV page&quot;, &quot;Check filters in Catalog&quot;)">runScenario("Check filters in TV page", "Check filters in Catalog")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-testng -->
@@ -121,43 +121,88 @@
           <div class="suite-testng-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">onliner.tests.forExperiments</span>
+              <span class="class-name">onliner.tests.runner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="xTest">
-                  </a> <!-- xTest -->
-                  <span class="method-name">xTest</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;[[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]]&apos; is not a valid XPath expression.
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;WSA-057-23&apos;, ip: &apos;192.168.170.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d64d0186b62bebb1cd52f2b5755d8a6d, findElements {using=xpath, value=[[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ILYA~1.SHA\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d64d0186b62bebb1cd52f2b5755d8a6d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:376)
-	at framework.BaseForm.findElements(BaseForm.java:47)
-	at onliner.tests.forms.TVPage.checkProductsName(TVPage.java:47)
-	at onliner.tests.forms.TVPage.checkFilterResults(TVPage.java:59)
-	at onliner.tests.forExperiments.runTest(forExperiments.java:23)
-	at framework.BaseTest.xTest(BaseTest.java:22)
+                  <a name="runScenario(&quot;Check filters in TV page&quot;, &quot;Check filters in Catalog&quot;)">
+                  </a> <!-- runScenario("Check filters in TV page", "Check filters in Catalog") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check filters in TV page","Check filters in Catalog")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Onliner Main page is opened&apos; and 10 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Onliner Main page is opened&quot;)
+public void onliner_main_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I will go to the Catalog menu point&quot;)
+public void i_will_go_to_the_catalog_menu_point() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;Catalog page is opened&quot;)
+public void catalog_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I navigate to TV page through menu&quot;)
+public void i_navigate_to_tv_page_through_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;TV page is opened&quot;)
+public void tv_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;TV page is opened&quot;)
+public void tv_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} in the Manufacturer section&quot;)
+public void i_select_in_the_manufacturer_section(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I enter {string} in the max price field&quot;)
+public void i_enter_in_the_max_price_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} and {string} in the Diagonal section&quot;)
+public void i_select_and_in_the_diagonal_section(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} in the Resolution section&quot;)
+public void i_select_in_the_resolution_section(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;Required products are displayed according to the filter parameters&quot;)
+public void required_products_are_displayed_according_to_the_filter_parameters() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at onliner.tests.runner.TestRunner.runScenario(TestRunner.java:13)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,7 +219,7 @@ Session ID: d64d0186b62bebb1cd52f2b5755d8a6d
 &lt;suite name=&quot;testng&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;SteamTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;onliner.tests.forExperiments&quot;/&gt;
+      &lt;class name=&quot;onliner.tests.runner.TestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SteamTest --&gt;
 &lt;/suite&gt; &lt;!-- testng --&gt;
@@ -198,6 +243,14 @@ Session ID: d64d0186b62bebb1cd52f2b5755d8a6d
             <span class="header-content">Groups for testng</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-testng" class="panel">
@@ -216,14 +269,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'xTest')
-data.setCell(0, 2, 'onliner.tests.forExperiments')
-data.setCell(0, 3, 6394);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'onliner.tests.runner.TestRunner')
+data.setCell(0, 3, 63);
 window.suiteTableData['testng']= { tableData: data, tableDiv: 'times-div-testng'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 63 ms</span>
               <div id="times-div-testng">
               </div> <!-- times-div-testng -->
             </div> <!-- times-div -->
@@ -249,21 +302,21 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">onliner.tests.forExperiments</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">before</span>
+              <div class="chronological-class-name">onliner.tests.runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@4b40f651)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">xTest</span>
-                <span class="method-start">1564 ms</span>
+                <span class="method-name">runScenario("Check filters in TV page", "Check filters in Catalog")</span>
+                <span class="method-start">142 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">after</span>
-                <span class="method-start">7963 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">209 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

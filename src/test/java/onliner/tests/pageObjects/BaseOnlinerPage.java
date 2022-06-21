@@ -1,4 +1,4 @@
-package onliner.tests.forms;
+package onliner.tests.pageObjects;
 
 import framework.BaseForm;
 import framework.elements.StringFormat;

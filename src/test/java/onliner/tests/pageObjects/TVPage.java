@@ -1,4 +1,4 @@
-package onliner.tests.forms;
+package onliner.tests.pageObjects;
 
 import framework.elements.Block;
 import framework.elements.CheckBox;
@@ -6,7 +6,6 @@ import framework.elements.InfoField;
 import framework.elements.TextBox;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 
@@ -109,12 +108,5 @@ public class TVPage extends BaseOnlinerPage {
         softAssertTrue(checkDiagonal(minDiagonal, maxDiagonal), "Checking diagonal");
         softAssertTrue(checkPrice(price), "Checking price");
         assertAll();
-
-
-        //softAssert.assertTrue(checkProductsName(manufacturerName), "Checking manufacturerName");
-        //softAssert.assertTrue(checkResolution(resolution), "Checking resolution");
-        //softAssert.assertTrue(checkDiagonal(minDiagonal, maxDiagonal));
-        //softAssert.assertTrue(checkPrice(price));
-        //softAssert.assertAll();
     }
 }

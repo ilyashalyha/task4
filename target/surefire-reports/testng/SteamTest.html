@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 20 17:01:57 MSK 2022</td>
+<td>Started on:</td><td>Tue Jun 21 17:20:04 MSK 2022</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7970 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (230 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,66 +76,145 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='onliner.tests.forExperiments.xTest()'><b>xTest</b><br>Test class: onliner.tests.forExperiments</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;[[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]]&apos; is not a valid XPath expression.
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;WSA-057-23&apos;, ip: &apos;192.168.170.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d64d0186b62bebb1cd52f2b5755d8a6d, findElements {using=xpath, value=[[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ILYA~1.SHA\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d64d0186b62bebb1cd52f2b5755d8a6d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:376)
-	at framework.BaseForm.findElements(BaseForm.java:47)
-	at onliner.tests.forms.TVPage.checkProductsName(TVPage.java:47)
-	at onliner.tests.forms.TVPage.checkFilterResults(TVPage.java:59)
-	at onliner.tests.forExperiments.runTest(forExperiments.java:23)
-	at framework.BaseTest.xTest(BaseTest.java:22)
+<td title='onliner.tests.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: onliner.tests.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check filters in TV page", "Check filters in Catalog"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Onliner Main page is opened&apos; and 10 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Onliner Main page is opened&quot;)
+public void onliner_main_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I will go to the Catalog menu point&quot;)
+public void i_will_go_to_the_catalog_menu_point() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;Catalog page is opened&quot;)
+public void catalog_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I navigate to TV page through menu&quot;)
+public void i_navigate_to_tv_page_through_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;TV page is opened&quot;)
+public void tv_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;TV page is opened&quot;)
+public void tv_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} in the Manufacturer section&quot;)
+public void i_select_in_the_manufacturer_section(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I enter {string} in the max price field&quot;)
+public void i_enter_in_the_max_price_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} and {string} in the Diagonal section&quot;)
+public void i_select_and_in_the_diagonal_section(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} in the Resolution section&quot;)
+public void i_select_in_the_resolution_section(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;Required products are displayed according to the filter parameters&quot;)
+public void required_products_are_displayed_according_to_the_filter_parameters() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at onliner.tests.runner.TestRunner.runScenario(TestRunner.java:13)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace956061012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace956061012'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;[[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]]&apos; is not a valid XPath expression.
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;WSA-057-23&apos;, ip: &apos;192.168.170.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d64d0186b62bebb1cd52f2b5755d8a6d, findElements {using=xpath, value=[[ChromeDriver: chrome on WINDOWS (d64d0186b62bebb1cd52f2b5755d8a6d)] -&gt; xpath: //div[@class=&apos;schema-product__title&apos;]//span[@data-bind=&apos;html: product.extended_name || product.full_name&apos;]]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ILYA~1.SHA\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:51419}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51419/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d64d0186b62bebb1cd52f2b5755d8a6d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:376)
-	at framework.BaseForm.findElements(BaseForm.java:47)
-	at onliner.tests.forms.TVPage.checkProductsName(TVPage.java:47)
-	at onliner.tests.forms.TVPage.checkFilterResults(TVPage.java:59)
-	at onliner.tests.forExperiments.runTest(forExperiments.java:23)
-	at framework.BaseTest.xTest(BaseTest.java:22)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1111613684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1111613684'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;Onliner Main page is opened&apos; and 10 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;Onliner Main page is opened&quot;)
+public void onliner_main_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I will go to the Catalog menu point&quot;)
+public void i_will_go_to_the_catalog_menu_point() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;Catalog page is opened&quot;)
+public void catalog_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I navigate to TV page through menu&quot;)
+public void i_navigate_to_tv_page_through_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;TV page is opened&quot;)
+public void tv_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;TV page is opened&quot;)
+public void tv_page_is_opened() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} in the Manufacturer section&quot;)
+public void i_select_in_the_manufacturer_section(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I enter {string} in the max price field&quot;)
+public void i_enter_in_the_max_price_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} and {string} in the Diagonal section&quot;)
+public void i_select_and_in_the_diagonal_section(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I select {string} in the Resolution section&quot;)
+public void i_select_in_the_resolution_section(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;Required products are displayed according to the filter parameters&quot;)
+public void required_products_are_displayed_according_to_the_filter_parameters() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at onliner.tests.runner.TestRunner.runScenario(TestRunner.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,8 +248,8 @@ Session ID: d64d0186b62bebb1cd52f2b5755d8a6d
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 </pre></div></td>
-<td>6</td>
-<td>onliner.tests.forExperiments@1ab3a8c8</td></tr>
+<td>0</td>
+<td>onliner.tests.runner.TestRunner@6c64cb25</td></tr>
 </table><p>
 </body>
 </html>

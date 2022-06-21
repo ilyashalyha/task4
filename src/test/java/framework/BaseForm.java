@@ -139,17 +139,8 @@ public class BaseForm extends Browser{
     }
 
     public String translateToUniqueSpace(String text) {
-
         StringBuilder builder = new StringBuilder(text);
         int start = builder.indexOf(" и ");
-
         return builder.replace(start + 2, start + 3, " ").toString();
     }
-
-    public String cutLocatorType(String locator) {
-        StringBuilder builder = new StringBuilder(locator);
-        int firstPart = builder.indexOf(" ");
-        return builder.substring(firstPart);
-    }
-
 }

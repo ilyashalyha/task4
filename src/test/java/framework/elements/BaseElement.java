@@ -51,6 +51,12 @@ public class BaseElement extends BaseForm {
         return getElement().isDisplayed();
     }
 
+    public String cutLocatorType(String locator) {
+        StringBuilder builder = new StringBuilder(locator);
+        int firstPart = builder.indexOf(" ");
+        return builder.substring(firstPart);
+    }
+
 
 
 

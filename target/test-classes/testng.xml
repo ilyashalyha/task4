@@ -3,7 +3,7 @@
 <suite name="testng">
     <test name="SteamTest" >
         <classes>
-            <class name="onliner.tests.forExperiments"/>
+            <class name="onliner.tests.runner.TestRunner"/>
         </classes>
     </test>
 </suite>
