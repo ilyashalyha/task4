@@ -6,7 +6,7 @@ import onliner.tests.pageObjects.CatalogPage;
 public class CatalogPageSteps {
     private final CatalogPage catalogPageSteps;
 
-    public CatalogPageSteps() throws Throwable {
+    public CatalogPageSteps() {
         catalogPageSteps = new CatalogPage();
     }
 

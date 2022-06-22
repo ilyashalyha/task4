@@ -40,6 +40,7 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.36</version>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -56,6 +57,12 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
             <version>7.3.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>5.7.0</version>
         </dependency>
 
     </dependencies>
@@ -82,7 +89,6 @@
                     <configuration>
                         <showSuccess>true</showSuccess>
                     </configuration>
-
                 </plugin>
 
             </plugins>

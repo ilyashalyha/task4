@@ -6,7 +6,6 @@ import framework.elements.InfoField;
 import framework.elements.TextBox;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import java.util.List;
 
@@ -109,10 +108,5 @@ public class TVPage extends BaseOnlinerPage {
         softAssertTrue(checkDiagonal(minDiagonal, maxDiagonal), "Checking diagonal");
         softAssertTrue(checkPrice(price), "Checking price");
         assertAll();
-
     }
 }
-
-/*
-
- */
