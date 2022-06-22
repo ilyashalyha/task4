@@ -25,7 +25,7 @@ public abstract class BaseTest {
     //@AfterTest(alwaysRun = true)
     public void after() {
         if (browser.isBrowserAlive()) {
-            //browser.exit();
+            browser.exit();
         }
     }
 }

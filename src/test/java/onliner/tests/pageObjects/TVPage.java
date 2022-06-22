@@ -6,6 +6,7 @@ import framework.elements.InfoField;
 import framework.elements.TextBox;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -101,12 +102,17 @@ public class TVPage extends BaseOnlinerPage {
         } return true;
     }
 
-    public void checkFilterResults(String manufacturerName, String resolution, String minDiagonal, String maxDiagonal, String price) {
+    public void checkFilterResults(String manufacturerName, String price, String minDiagonal, String maxDiagonal, String resolution) {
         waitForElement();
         softAssertTrue(checkProductsName(manufacturerName), "Checking manufacturerName");
         softAssertTrue(checkResolution(resolution), "Checking resolution");
         softAssertTrue(checkDiagonal(minDiagonal, maxDiagonal), "Checking diagonal");
         softAssertTrue(checkPrice(price), "Checking price");
         assertAll();
+
     }
 }
+
+/*
+
+ */
