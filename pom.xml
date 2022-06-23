@@ -61,8 +61,14 @@
 
         <dependency>
             <groupId>net.masterthought</groupId>
-            <artifactId>maven-cucumber-reporting</artifactId>
-            <version>5.7.0</version>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>5.7.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>me.jvt.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>7.3.0</version>
         </dependency>
 
     </dependencies>
@@ -75,13 +81,14 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
                     <configuration>
+                        <testFailureIgnore>true</testFailureIgnore>
                         <suiteXmlFiles>
                             <!-- src/test/resources/${suite}.xml or src/test/resources/testng.xml -->
                             <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
-
+<!--
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-report-plugin</artifactId>
@@ -89,6 +96,33 @@
                     <configuration>
                         <showSuccess>true</showSuccess>
                     </configuration>
+                </plugin>-->
+
+                <plugin>
+                    <groupId>net.masterthought</groupId>
+                    <artifactId>maven-cucumber-reporting</artifactId>
+                    <version>5.6.0</version>
+                    <executions>
+                        <execution>
+                            <id>execution</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>generate</goal>
+                            </goals>
+                            <configuration>
+                                <projectName>cucumberReporting</projectName>
+                                <skip>false</skip>
+                                <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+                                <inputDirectory>${project.build.directory}/cucumber.json</inputDirectory>
+                                <jsonFiles>
+                                    <param>**/*.json</param>
+                                </jsonFiles>
+                                <mergeFeaturesById>false</mergeFeaturesById>
+                                <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
+                                <checkBuildResult>false</checkBuildResult>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
 
             </plugins>
