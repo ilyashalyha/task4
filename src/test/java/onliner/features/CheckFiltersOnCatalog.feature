@@ -17,5 +17,4 @@ Feature: Check filters in Catalog
     Examples:
       | manufacturer | maxPrice | minDiagonal | maxDiagonal |      resolution     |
       |   Samsung    |   1500   |      40     |     50      | 1920x1080 (Full HD) |
-      |     LG       |   1500   |      40     |     50      | 1920x1080 (Full HD) |
 
